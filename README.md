@@ -15,63 +15,73 @@ Data
 Data Collection
 Supervised learning utilizes 'labeled data' to train neural networks. Such data, which could be an image, will include identification of whether or not corrosion is present in that image. In general terms, more training data leads to better deep learning accuracy. It has been demonstrated that using more training data outperforms supervised learning models developed with more accurately labeled data, provided that the incidence of so-called adversarial labeling (i.e., incorrect labeling of training data) is low [3,4,5]. There is a need for a certain amount of data to learn a good, generalized relationship between the inputs and the desired outputs. Without the benefit of a publicly available dataset, labeling large quantities of data is the first and most important step toward developing accurate deep learning models. In this research, the dataset is labeled into two categories, which are CORROSION and NO CORROSION. The entire dataset includes a total number of 1819 images containing 990 images of CORROSION and 829 images of NO CORROSION. These images were collected from the internet and labeled by the author with a background in corrosion engineering.
 
-All the labeled CORROSION and NO CORROSION images were collected by scraping images from google. Selenium was used to automate web browser interaction with Python. Selenium pretends to be a real user, opens the browser, moves the cursor around, and clicks buttons if you tell it to do so. Please reference this complete guide of “Image Scraping with Python” for the detailed explanation and steps with codes.
+All the labeled CORROSION and NO CORROSION images were collected by scraping images from google. Selenium was used to automate web browser interaction with Python. Selenium pretends to be a real user, opens the browser, moves the cursor around, and clicks buttons if you tell it to do so. Please reference this complete guide of “https://towardsdatascience.com/image-scraping-with-python-a96feda8af2d” for the detailed explanation and steps with codes.
 
 The CORROSION images were scraped from Google Images using keyword searches that include eight categories of corrosion problems, such as ‘Steel Corrosion/Rust,’ ‘Ships Corrosion,’ ‘Ship Propellers Corrosion,’ ‘Cars Corrosion,’ ‘Oil and Gas Pipelines Corrosion,’ ‘Concrete Rebar Corrosion,’ ‘Water/Oil Tanks Corrosion,’ and ‘Stainless Steel Corrosion,’ The NO CORROSION images were also scraped from Google Images using the same terms without corrosion. The following demonstrates the examples of CORROSION and NO CORROSION images in each category.
 
 Steel Corrosion/Rust
 Rust is the most common form of corrosion. Rusting is oxidation of iron in the presence of air and moisture and occurs on surfaces of iron and its alloys (steel).
 
-Trulli
+![image](https://user-images.githubusercontent.com/96236642/152165129-33b45c6e-0d95-4f12-9995-1800ca49776a.png)
 
 Figure 1: Corrosion and No Corrosion images of the steel plate
+
 Ship Corrosion
 The ship is one that continuously faces corrosion challenges stemming from marine environments, particularly seawater. Seawater contains a significant concentration of dissolved salts and is very corrosive to steel, infrastructures, and assets. Ship corrosion is a major hazard for the industry. The deterioration of these structures causes higher maintenance costs, early system failures, or an overall shortened service life.
 
-Trulli
+![image](https://user-images.githubusercontent.com/96236642/152165172-2959b6a8-a22c-48b1-a5e7-3a4881e6f337.png)
 
 Figure 2: Corrosion and No Corrosion images of the ship hull
+
 Ship Propeller Corrosion
 Propeller performance plays an important part in a ship’s operation. Therefore, maintaining propellers in a smooth and corrosion-free condition is critical to the efficient propulsion of a vessel.
 
-Trulli
+![image](https://user-images.githubusercontent.com/96236642/152165235-cb5b88dc-bfca-4c25-bfaa-8f98652b6058.png)
 
 Figure 3: Corrosion and No Corrosion images of the ship propeller
+
 Car Corrosion
 Most of the cars are made of steel. The rust of vehicles can make an expensive car look like a beater. It lowers the resale value of a vehicle, and if left untreated, will make your vehicle unsafe to drive.
 
-Trulli
+![image](https://user-images.githubusercontent.com/96236642/152165290-5f1f7016-cfb8-40ee-8b6d-767c309db751.png)
 
 Figure 4: Corrosion and No Corrosion images of the car
+
 Oil and Gas Pipelines Corrosion
 Corrosion is the destructive attack of a material by reaction with its environment [6] and a natural potential hazard associated with oil and gas production and transportation facilities [7]. Almost any aqueous environment can promote corrosion, which occurs under numerous complex conditions in oil and gas production, processing, and pipeline systems [8]. Crude oil and natural gas can carry various high-impurity products which are inherently corrosive. In the case of oil and gas wells and pipelines, such highly corrosive media are carbon dioxide (CO2), hydrogen sulfide (H2S), and free water [9]. Continual extraction of CO2, H2S, and free water through oil and gas components can make the internal surfaces of these components suffer from corrosion effects. Oil and gas pipeline corrosion contains several different corrosion types, which include CO2 corrosion, H2S Corrosion, oxygen corrosion, galvanic corrosion, crevice corrosion, microbiologically induced corrosion, and stress corrosion cracking. Figure 5 shows the diagrammatic representation of oxygen corrosion.
 
-Trulli
+![image](https://user-images.githubusercontent.com/96236642/152165363-a4051854-d0f0-4c17-8229-7e0810e569ab.png)
 
 Figure 5: Corrosion and No Corrosion images of the oil and gas pipelines
+
 Concrete Rebar Corrosion
 Corrosion of reinforcing steel and other embedded metals is the leading cause of deterioration in concrete. When steel corrodes, the resulting rust occupies a greater volume than the steel. This expansion creates tensile stresses in the concrete, which can eventually cause cracking, delamination, and spalling.
 
-Trulli
+![image](https://user-images.githubusercontent.com/96236642/152165422-22e4e01b-7978-4630-ba32-5dd4297f7a6f.png)
 
 Figure 6: Corrosion and No Corrosion images of the concrete rebar
+
 Water Storage Tank Corrosion
 In a water tank, the steel wall of the tank is the anode. It gives off electrons that flow into the water. The water is the cathode, and the tank's surface is the closure circuit that connects the anode and cathode. As the electrons flow out of the steel wall of the tank, the tank corrodes. Over time, this corrosion can discolor the water and can result in leaks in the tank wall.
 
-Trulli
+Water Storage Tank Corrosion
 
 Figure 7: Corrosion and No Corrosion images of the water tank
+
 Stainless Steel Corrosion
 Stainless steel is one of the most durable of metals. Its mechanical properties enable its structures to remain highly resistant to rust. Stainless steels fine layer of chromium oxide is a natural coating to protect stainless steel from corrosion. However, if this coating is attacked by certain species and damage is too extensive, corrosion can occur.
 
-Trulli
+![image](https://user-images.githubusercontent.com/96236642/152165549-c8009a74-f31b-48dc-9e53-b4a8e9725730.png)
 
 Figure 8: Corrosion and No Corrosion images of the stainless steel fastner
+
 Methodology
+
 Data Exploring
+
 The entire dataset was split into the ratio of 70% train, 20% validation, and 10% test. All the three groups of datasets have the same ratio of CORROSION and NO CORROSION, which is 54.4% of corrosion images and 45.6% of no corrosion images.
 
-Trulli
+![image](https://user-images.githubusercontent.com/96236642/152165610-b27c8f75-75c9-4145-b34b-8eaba92fa477.png)
 
 Figure 9: Distribution of CORROSION and NO CORROSION training dataset
 Image Preprocessing
@@ -84,9 +94,10 @@ Data Augmentation
 In addition, I've also applied some augmentations to the images: zoomed-in, sheer, horizontal flip, and vertical flip. Data augmentation is an excellent practice to add more data to the existing dataset and add minor alterations and diversity to avoid the model from overfitting to training data.
 
 Modelling
+
 Around 30 models were trained with different combinations of activations, number of feature maps, dropouts, l1/l2 regulations, and batch normalizations. The following Figure 10 is the architecture of my best-performance model.
 
-Trulli
+![image](https://user-images.githubusercontent.com/96236642/152165682-5c487c84-256f-495b-9736-ec31713798d2.png)
 
 Figure 10: Convolution Neural Network Architecture
 The best performance model has four convolutional 2D layers, with each followed by a max-pooling layer. I also added a drop-out layer after each max-pooling layer to reduce overfitting to the training dataset. Finally, after being flattened, it is fed into a fully connected layer with ReLU activation. In the end, I used the sigmoid activation function to predict the output probabilities for this binary classification problem.
@@ -96,19 +107,20 @@ Figure 11 shows the performance of how our deep learning model is being trained 
 
 As you can see, for the chart on the left, as the number of epoch increases, the lines of validation loss and training loss approach each other, which means that our model doesn't seem to have much overfitting or underfitting. For the chart on the right, the line of training and validation accuracy score converges to a point where they are almost equal in the end.
 
-image.png
+![image](https://user-images.githubusercontent.com/96236642/152165727-3792a46c-b710-4a79-b9f7-f0c351d15e22.png)
 
 Figure 11: Model learning curves: Loss and Accuracy Score
 Our test set yields an AUC score of 94.44%, which indicates that our best performance CNN model does a great job at ranking the data by its class in the test set (Figure 12).
 
-image.png
+![image](https://user-images.githubusercontent.com/96236642/152165782-77167915-4fff-4088-b143-efeee3a243c6.png)
 
 Figure 12: ROC curve and AUC score
 In this research, we aim to have a high recall number for detecting corrosion as any missed corrosion problem or delayed treatment could lead to catastrophic failure of the structures that cause loss of assets or even human life. Our best performance model achieves 92% for recall, which did an excellent job of detecting corrosion. The confusion matrix shows [Figure 13] that our model correctly classified 91 out of 99 corrosion images in the test set. At the same time, the false positives and false negatives are 8.79% and 4.4%, which also shows that our model did a decent job in detecting whether an image contains corrosion or not.
 
-image.png
+![image](https://user-images.githubusercontent.com/96236642/152165816-1aa45231-298d-44e7-8d6c-bbe4bcc2dd23.png)
 
 Figure 13: Confusion Matrix
+
 Conclusion
 This research proposes building a deep learning model using the CNN method and automatically learning the corrosion behaviors to classify them.
 
@@ -119,6 +131,7 @@ By giving a wide variety of corrosion images, our model can efficiently find the
 A high accuracy automated corrosion detection model can reduce the cost of corrosion inspections and chances of human life in danger.
 
 Future Work
+
 In the future work, there is still room for improvement.
 
 To increase the model's overall accuracy, increasing the number and diversity in the dataset is a must. Specifically, for corrosion detection and segmentation (i.e..., per-pixel labeling), it was found that there is a need for 65,000 labeled images required to achieve an essentially human-level accuracy for an A. I model [10].
@@ -128,6 +141,7 @@ In the context of model accuracy, the model training is influenced by the labele
 Including image segmentation and using U-Net CNN architecture [11][12] further improves the model's overall performance to reach human-level accuracy of corrosion detection. Image segmentation can let you know where an object is located in the image, the shape of that object, which pixel belongs to which object, which helps understand the image at a much lower level. U-net is an architecture of semantic segmentation. It has been proven quite helpful for biomedical image segmentation. In corrosion detection, it is quite worthy of using the U-net architecture model to detect localized corrosion problems, including pit corrosion and crevice corrosion.
 
 Reference
+
 [1] NACE IMPAC: ECONOMIC IMPACT. http://impact.nace.org/economic-impact.aspx
 
 [2] J. Yosinski, J. Clune, A. Nguyen, T. Fuchs, H. Lipson, Understanding Neural Networks Through Deep Visualization, Int. Conf. Mach. Learn. - Deep Learn. Work. 2015. (2015) 12. http://arxiv.org/abs/1506.06579.
